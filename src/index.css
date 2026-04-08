@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+:root{
+  --primary: #E91E63;
+  --secondary: #B78D65;
+  --tertiary: #FADADD;
+  --neutral:#2F2F2F;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.logo{
+  color:var(--primary);
+}
