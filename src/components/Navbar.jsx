@@ -29,11 +29,11 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-6">
           {isHome ? (
-            <span className="logo text-xl font-bold cursor-default">
+            <span className="text-velvet-crimson text-xl font-bold cursor-default">
               Velvet Rose
             </span>
           ) : (
-            <Link to="/" className="logo text-xl font-bold">
+            <Link to="/" className="text-velvet-crimson text-xl font-bold">
               Velvet Rose
             </Link>
           )}

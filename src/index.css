@@ -26,20 +26,42 @@ body {
   box-sizing: border-box;
 }
 
-.logo{
+.bg-velvet-crimson{
+  background-color:var(--velvet-crimson);
+}
+.bg-deep-charcoal{
+  background-color: var(--deep-charcoal);
+}
+.bg-soft-gold{
+  background-color: var(--soft-gold);
+}
+.bg-cream{
+  background-color: var(--cream);
+}
+.bg-stone{
+  background-color: var(--stone);
+}
+.bg-mist-grey{
+  background-color: var(--mist-grey);
+}
+
+.text-velvet-crimson{
   color:var(--velvet-crimson);
 }
-
-/*Footer CSS*/
-.footer{
-  background:var(--stone);
-  color:var(--mist-grey);
-}
-
-.footer__logo{
+.text-deep-charcoal{
   color: var(--deep-charcoal);
 }
-
-.footer__link-title{
-  color: var(--velvet-crimson);
+.text-soft-gold{
+  color: var(--soft-gold);
 }
+.text-cream{
+  color: var(--cream);
+}
+.text-stone{
+  color: var(--stone);
+}
+.text-mist-grey{
+  color: var(--mist-grey);
+}
+
+
