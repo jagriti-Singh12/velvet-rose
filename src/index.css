@@ -1,18 +1,22 @@
 @import 'tailwindcss';
 
 :root{
-  --primary: #E91E63;
-  --secondary: #B78D65;
-  --tertiary: #FADADD;
-  --neutral:#2F2F2F;
+  --velvet-crimson: #E91E63;
+  --deep-charcoal: #1B1C1C;
+  --soft-gold: #D4AF37;
+  --cream: #FBF9F8;
+  --stone: #F6F3F2;
+  --mist-grey:#7B5734;
+
 }
 
 body {
   margin: 0;
+  color:var(--deep-charcoal);
 }
 
 #root {
-  width: 1400px;
+  width: 1280px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -23,5 +27,19 @@ body {
 }
 
 .logo{
-  color:var(--primary);
+  color:var(--velvet-crimson);
+}
+
+/*Footer CSS*/
+.footer{
+  background:var(--stone);
+  color:var(--mist-grey);
+}
+
+.footer__logo{
+  color: var(--deep-charcoal);
+}
+
+.footer__link-title{
+  color: var(--velvet-crimson);
 }
