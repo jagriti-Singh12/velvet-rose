@@ -6,7 +6,10 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
 import Footer from "./components/Footer";
+import Signup from "./pages/Signup";
+
 export default function App() {
+
   return (
    <>
       <Navbar/>
@@ -16,6 +19,7 @@ export default function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer/>
       </>

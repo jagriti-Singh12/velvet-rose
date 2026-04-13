@@ -3,14 +3,14 @@ import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-stone text-mist-grey mt-10">
+    <footer className="footer bg-white text-mist-grey">
       
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
 
         {/* Brand */}
         <div className="text-left">
-          <h2 className="text-deep-charcoal text-xl font-bold">Velvet Rose</h2>
+          <h2 className="text-velvet-crimson text-xl font-bold">Velvet Rose</h2>
           <p className="mt-3 text-sm">
             Premium beauty products curated for modern lifestyles.
           </p>
@@ -40,15 +40,15 @@ export default function Footer() {
         <div>
           <h3 className="text-velvet-crimson font-semibold mb-3">Follow Us</h3>
           <div className="flex justify-center gap-4 text-xl">
-            <FiFacebook className="cursor-pointer hover:text-white" />
-            <FiInstagram className="cursor-pointer hover:text-white" />
-            <FiTwitter className="cursor-pointer hover:text-white" />
+            <FiFacebook className="cursor-pointer" />
+            <FiInstagram className="cursor-pointer" />
+            <FiTwitter className="cursor-pointer" />
           </div>
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-700 text-center py-4 text-sm">
+      <div className="footer__copyright text-center py-4 text-sm">
         © {new Date().getFullYear()} Velvet Rose. All rights reserved.
       </div>
     </footer>

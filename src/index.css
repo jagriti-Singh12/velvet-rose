@@ -7,7 +7,7 @@
   --cream: #FBF9F8;
   --stone: #F6F3F2;
   --mist-grey:#7B5734;
-
+  --velvet-crimson-800: #C2185B;
 }
 
 body {
@@ -64,6 +64,11 @@ body {
   color: var(--mist-grey);
 }
 
+.text-velvet-crimson-800{
+  font-weight: 800;
+  color: var(--velvet-crimson-800);
+}
+
 .banner{
   min-height: 80vh;
 }
@@ -72,3 +77,19 @@ body {
   object-position: center;
 }
 
+.footer__copyright{
+  background-color: var(--velvet-crimson);
+  color: var(--cream);
+}
+
+.btn-tertiary{
+  background-color: transparent;
+  border: 1px solid var(--velvet-crimson);
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.input{
+  border: 1px solid #e6c1c6;
+  transition: all 0.3s ease;
+}

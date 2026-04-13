@@ -60,16 +60,16 @@ export default function Banner() {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto absolute inset-0 flex flex-col justify-center items-start px-8 md:px-16 text-white">
-            <h1 className="text-deep-charcoal text-3xl md:text-5xl font-bold mb-4">
+            <h1 className="text-cream text-3xl md:text-5xl font-bold mb-4">
               {slide.title}
             </h1>
-            <p className="text-deep-charcoal text-lg md:text-xl mb-6">
+            <p className="text-cream text-lg md:text-xl mb-6">
               {slide.subtitle}
             </p>
 
             <Link
               to="/category/skincare"
-              className="bg-velvet-crimson text-white px-6 py-3 rounded-md font-medium"
+              className="bg-velvet-crimson text-cream px-6 py-3 rounded-md font-medium"
             >
               Shop Now
             </Link>

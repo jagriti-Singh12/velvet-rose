@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FiShoppingCart, FiUser, FiMenu, FiX } from "react-icons/fi";
-import { cn } from "../lib/utils";
 
 export default function Navbar() {
   const location = useLocation();
@@ -17,10 +16,6 @@ export default function Navbar() {
       document.body.style.overflow = "auto";
     }
   }, [isOpen]);
-
-   useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
 
   const isActive = (path) => location.pathname.includes(path);
 
@@ -38,9 +33,9 @@ export default function Navbar() {
             </Link>
           )}
           <div className="hidden md:flex items-center gap-6">
-            <Link to="/category/skincare" className={cn(isActive('skincare') ? "text-black font-semibold" : "")}>Skincare</Link>
-            <Link to="/category/makeup" className={cn(isActive('makeup') ? "text-black font-semibold" : "")}>Makeup</Link>
-            <Link to="/category/fragrance" className={cn(isActive('fragrance') ? "text-black font-semibold" : "")}>Fragrance</Link>
+            <Link to="/category/skincare" className={isActive("skincare") ? "text-black font-semibold" : ""}>Skincare</Link>
+            <Link to="/category/makeup" className={isActive('makeup') ? "text-black font-semibold" : ""}>Makeup</Link>
+            <Link to="/category/fragrance" className={isActive('fragrance') ? "text-black font-semibold" : ""}>Fragrance</Link>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-6">
